@@ -1,14 +1,21 @@
 import React from 'react';
 import './App.css';
+import photoCard from './components/photoCard';
+import  Navbar from './components/Navbar';
+import  Site from './components/site';
+import  Messages from './components/messages';
 
 function App() {
   return (
     <div>
       <header>
-        [[ SITE NAV GOES HERE ]]
+        <Navbar/>
+        <photoCard/>
+        <Messages/>
       </header>
       <div class="container">
-        <h1 class="section-title">Recent Photos (6)</h1>
+           
+        <h1 class="section-title"> photoCards</h1>
         <ul class="cards">
           <li class="cards-item quarter">
             <div class="card">
@@ -371,7 +378,7 @@ function App() {
         </ul>
       </div>
       <footer>
-        [[ SITE FOOTER GOES HERE ]]
+      <Site/>
       </footer>
     </div>
   );
